@@ -1,6 +1,6 @@
 import  pandas as pd
 import re
-df = pd.read_excel('../Database/RawData.xlsx')
+df = pd.read_excel('../Database/FinalRawData.xlsx')
 
 date = df['InvoiceDate'].values
 
