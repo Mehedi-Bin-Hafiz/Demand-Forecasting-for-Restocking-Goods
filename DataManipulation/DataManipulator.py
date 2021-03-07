@@ -4,21 +4,37 @@ from datetime import datetime
 # df = pd.read_excel('../Database/RawData.xlsx').sample(frac=1).iloc[:300000]
 # df.to_excel('../Database/CutData.xlsx')
 
-############# Datetime Devider ###############
-df = pd.read_excel('../Database/CutData.xlsx')
-date = df['date'].values
-yearL = list()
-monthL = list()
-dayL = list()
-for i in date:
-    i = pd.to_datetime(i) ##VVI
-    yearL.append(i.year)
-    monthL.append(i.month)
-    dayL.append(i.day)
-df.insert(1,'year',yearL)
-df.insert(2, 'month',monthL)
-df.insert(3, 'day',dayL)
-df.to_excel('../Database/Manipulated.xlsx',index = False)
+# ############# Datetime Devider ###############
+# df = pd.read_excel('../Database/CutData.xlsx')
+# date = df['date'].values
+# yearL = list()
+# monthL = list()
+# dayL = list()
+# for i in date:
+#     i = pd.to_datetime(i) ##VVI
+#     yearL.append(i.year)
+#     monthL.append(i.month)
+#     dayL.append(i.day)
+# df.insert(1,'year',yearL)
+# df.insert(2, 'month',monthL)
+# df.insert(3, 'day',dayL)
+# df.to_excel('../Database/Manipulated.xlsx',index = False)
+
+
+###################### select first 15000 data ######################
+df = pd.read_excel('../Database/Manipulated.xlsx').sample(frac=1).iloc[:15101]
+df.to_excel('../Database/AnotherNewFinalManipulated.xlsx')
+
+
+
+
+
+
+
+
+
+
+
 
 
 
