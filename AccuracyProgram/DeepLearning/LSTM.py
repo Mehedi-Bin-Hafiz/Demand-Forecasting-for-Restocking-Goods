@@ -12,7 +12,7 @@ def r2_score(y_true, y_pred):
     SS_tot = K.sum(K.square(y_true - K.mean(y_true)))
     return ( 1 - SS_res/(SS_tot + K.epsilon()) )
 
-MainDatabase = pd.read_excel("../../Database/Manipulated.xlsx").iloc[:1000]
+MainDatabase = pd.read_excel("../../Database/AnotherNewFinalManipulated.xlsx").iloc[:1000]
 y = MainDatabase.iloc[ : , 6:7].values
 from sklearn.preprocessing import MinMaxScaler
 sc =MinMaxScaler(feature_range=(0,1))
