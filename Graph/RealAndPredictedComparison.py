@@ -40,9 +40,7 @@ print('Mean Squared Error:', metrics.mean_squared_error(Vy, y_pred))
 print('Root Mean Squared Error:', np.sqrt(metrics.mean_squared_error(Vy, y_pred)))
 print('r2_sore:',r2_score(Vy,y_pred))
 
-# lineDF = pd.DataFrame(
-#     {'real': ValidationDataset['sales'].values,
-#      'predicted': y_pred,})
+
 axes = plt.axes()
 XandYlen = [x for x in range(0,len(y_pred))]
 plt.plot(XandYlen, ValidationDataset['sales'].values.tolist(), linewidth=3)

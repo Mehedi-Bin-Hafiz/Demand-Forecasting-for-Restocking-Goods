@@ -14,6 +14,7 @@ for i in range(2013,2018):
     yearly = pd.DataFrame(yearly)
     itemCountsDf =  yearly['item'].value_counts().rename_axis('uniqueItems').reset_index(name='counts')
     sumCount.append(sum(itemCountsDf['counts'].values.tolist()))
+
 print(sumCount)
 
 objects = [x for x in range(2013,2018)]

@@ -1,9 +1,9 @@
-import  pandas as pd
-import re
-from datetime import datetime
+# import  pandas as pd
+# import re
+# from datetime import datetime
 # df = pd.read_excel('../Database/RawData.xlsx').sample(frac=1).iloc[:300000]
 # df.to_excel('../Database/CutData.xlsx')
-
+#
 # ############# Datetime Devider ###############
 # df = pd.read_excel('../Database/CutData.xlsx')
 # date = df['date'].values
@@ -19,11 +19,11 @@ from datetime import datetime
 # df.insert(2, 'month',monthL)
 # df.insert(3, 'day',dayL)
 # df.to_excel('../Database/Manipulated.xlsx',index = False)
-
-
-###################### select first 15000 data ######################
-df = pd.read_excel('../Database/Manipulated.xlsx').sample(frac=1).iloc[:15101]
-df.to_excel('../Database/AnotherNewFinalManipulated.xlsx')
+#
+#
+# ###################### select first 15000 data ######################
+# df = pd.read_excel('../Database/Manipulated.xlsx').sample(frac=1).iloc[:15101]
+# df.to_excel('../Database/AnotherNewFinalManipulated.xlsx')
 
 
 

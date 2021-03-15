@@ -21,15 +21,15 @@ print(x)
 y = MainDatabase.iloc[ : , -1].values #dependent variables
 print(y)
 
-thirtypercent=0.30  # training size 70%
-fourtypercent=0.40   # training size 60%
-fiftypercent=0.50    # training size 50%
-sixtypercent=0.60    # training size 40%
-seventypercent=0.70   # training size 30%
+thirtypercent = 0.30  # training size 70%
+fourtypercent = 0.40   # training size 60%
+fiftypercent = 0.50    # training size 50%
+sixtypercent = 0.60    # training size 40%
+seventypercent = 0.70   # training size 30%
 
 #naive bayes
 print("\n########## Gradient Boosting ###########")
-print("30% data usage rate")
+print("30% test data usage rate")
 X_train, X_test, y_train, y_test=train_test_split(x, y,test_size=.30, random_state=42)
 clf_gb = GradientBoostingRegressor(n_estimators=200)
 clf_gb.fit(X_train,y_train)
