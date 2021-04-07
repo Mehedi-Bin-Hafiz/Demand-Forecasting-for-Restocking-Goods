@@ -22,7 +22,8 @@ y_pos = np.arange(len(objects)) #[x for x in range(len(objects))]
 
 plt.bar(y_pos, sumCount,width=0.5, align='center', alpha=0.8)
 plt.xticks(y_pos, objects)
-plt.ylabel('Usage')
+plt.ylabel('Sales items')
+plt.xlabel('Years')
 plt.grid()
 plt.savefig('yearly sales rate.png')
 plt.show()
